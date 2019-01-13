@@ -1,0 +1,32 @@
+buildscript {
+    ext.dagger_version = '2.17'
+}
+
+plugins {
+    id "net.ltgt.apt" version "0.10"
+}
+
+group 'dagger'
+version '1.0.0'
+
+apply plugin: 'java'
+apply plugin: 'application'
+
+sourceCompatibility = 1.8
+
+mainClassName = "com.example.Main"
+
+sourceSets.main.java.srcDirs = ['build/generated/source/apt/main','src/main/java']
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'junit:junit:version:4.12'
+    implementation 'javax.inject:javax.inject:1'
+    compile "com.google.dagger:dagger:$dagger_version"
+    implementation "com.google.dagger:dagger-producers:$dagger_version"
+    apt "com.google.dagger:dagger-compiler:$dagger_version"
+}
+
