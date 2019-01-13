@@ -23,10 +23,9 @@ repositories {
 }
 
 dependencies {
-    testImplementation 'junit:junit:version:4.12'
+    testImplementation 'junit:junit:4.12'
     implementation 'javax.inject:javax.inject:1'
-    compile "com.google.dagger:dagger:$dagger_version"
+    implementation "com.google.dagger:dagger:$dagger_version"
     implementation "com.google.dagger:dagger-producers:$dagger_version"
     apt "com.google.dagger:dagger-compiler:$dagger_version"
 }
-
