@@ -13,5 +13,7 @@ public interface AppComponent {
         AppComponent build();
     }
 
+    Application getApplication();
+
     Context getContext();
 }
