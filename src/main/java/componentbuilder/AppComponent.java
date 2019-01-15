@@ -2,9 +2,15 @@ package componentbuilder;
 
 import dagger.BindsInstance;
 import dagger.Component;
+import singleton.VersionModule;
 
-@Component(modules = BindModule.class)
+import javax.inject.Singleton;
+
+@Component(modules = {BindModule.class, VersionModule.class})
+@Singleton
 public interface AppComponent {
+
+    Integer getVersion();
 
     @Component.Builder
     interface Builder {
