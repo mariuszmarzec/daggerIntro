@@ -8,5 +8,7 @@ import singleton.ActivityScope;
 @Component(dependencies = AppComponent.class, modules = ActivityModule.class)
 public interface ActivityComponent {
 
+    Double getPrice();
+
     String getWelcomeText();
 }
