@@ -12,8 +12,6 @@ public interface AppComponent {
 
     Integer getVersion();
 
-    Double getPrice();
-
     @Component.Builder
     interface Builder {
         @BindsInstance
