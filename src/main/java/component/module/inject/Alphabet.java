@@ -11,7 +11,6 @@ public class Alphabet {
         return a;
     }
 
-    @Inject
     public void setA(A a) {
         this.a = a;
     }
@@ -20,7 +19,6 @@ public class Alphabet {
         return b;
     }
 
-    @Inject
     public void setB(B b) {
         this.b = b;
     }

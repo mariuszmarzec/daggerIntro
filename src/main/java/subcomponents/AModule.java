@@ -2,7 +2,7 @@ package subcomponents;
 
 import dagger.Module;
 
-@Module(subcomponents = BComponent.class)
+@Module
 public class AModule {
 
 }

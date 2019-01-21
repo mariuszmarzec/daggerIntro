@@ -11,6 +11,4 @@ import java.util.Map;
 @Module
 interface ParentModule {
 
-    @Multibinds
-    Map<String, Integer> bindEmpty();
 }

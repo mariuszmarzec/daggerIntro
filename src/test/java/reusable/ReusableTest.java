@@ -12,10 +12,10 @@ public class ReusableTest {
      */
     @Test
     public void reusableTest() {
-        ParentComponent parentComponent = DaggerParentComponent.create();
-        ChildComponent childComponent = parentComponent.buildChildComponent();
-        ChildComponent childComponent2 = parentComponent.buildChildComponent();
-
-        assertSame(childComponent.getObject(), childComponent2.getObject());
+//        ParentComponent parentComponent = DaggerParentComponent.create();
+//        ChildComponent childComponent = parentComponent.buildChildComponent();
+//        ChildComponent childComponent2 = parentComponent.buildChildComponent();
+//
+//        assertSame(childComponent.getObject(), childComponent2.getObject());
     }
 }
